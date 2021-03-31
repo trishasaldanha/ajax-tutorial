@@ -5,7 +5,7 @@
 
         <script type="application/javascript">
             function loadJSON() {
-                var data_file = "http://api.taylor.rest";
+                var data_file = "https://www.boredapi.com/api/activity/";
                 var http_request = new XMLHttpRequest();
 
                 try {
@@ -34,7 +34,7 @@
 
                         //jsonObj variable now contains the data structure and can
                         //be accessed as jsonObj.activity
-                        document.getElementById("activity").innerHTML = jsonObj.quote;
+                        document.getElementById("activity").innerHTML = jsonObj.activity;
                     }
                 }
 
